@@ -173,7 +173,7 @@ export function Lenta() {
     //--------
     let _current_transform = slider_lentaRef.current.style.transform;
     if (
-      _current_transform === "" ||
+      _current_transform === " " ||
       _current_transform === " " ||
       _current_transform === undefined
     ) {
