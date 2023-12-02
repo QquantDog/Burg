@@ -1,0 +1,82 @@
+.lenta {
+  background-color: rgb(255, 182, 25);
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cnt-lenta-overflow {
+  /* overflow: auto; */
+  /* needed for absolute position of slider buttons */
+  position: relative;
+  overflow: hidden;
+}
+
+.divleft {
+  position: absolute;
+  z-index: 1;
+  top: 45%;
+  left: 5%;
+  /*  */
+  /*  */
+}
+.divright {
+  position: absolute;
+  z-index: 1;
+  top: 45%;
+  right: 5%;
+  /*  */
+  /*  */
+}
+
+.slider_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.slider_lenta {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 2000px;
+}
+
+.lenta-elem {
+  /* padding: 10px; */
+  /* width: 250px; */
+  /* border-radius: 20px;
+  background-color: gray; */
+  /* margin: 0px 10px; */
+}
+
+.lenta-elem-img {
+  border-radius: 25px;
+  /* width можно не задавать так как флекс сам выберет ширину, в завимости от */
+  /* ширины родительского контейнера а ширина вычислима в useEffect на начале  */
+  width: 210px;
+  height: 252px;
+  display: block;
+}
+
+.slider-btn-style {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* z-index не помогает кнопке быть наверху */
+  /* position: absolute;
+  z-index: 1; */
+}
+
+.sb1:hover,
+.sb2:hover {
+  background: rgba(200, 200, 200, 0.9);
+  transition: 0.2s ease-out;
+}
+
+.WOW {
+  transition: transform 1s linear;
+}

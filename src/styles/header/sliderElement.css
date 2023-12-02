@@ -1,0 +1,42 @@
+.portal-wrapper {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 31;
+}
+.portal-wrapper::after {
+  content: "";
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  z-index: 32;
+  backdrop-filter: blur(20px);
+}
+
+.enlarge {
+  position: absolute;
+  z-index: 33;
+  display: inline-block;
+}
+.enlarge-img {
+  border-radius: 5vh;
+
+  height: 85vh;
+}
+
+/* .background-slider-elem {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 30;
+} */
