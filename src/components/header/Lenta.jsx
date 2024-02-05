@@ -22,15 +22,7 @@ export function Lenta() {
   // let sliderOffsetX = 0;
 
   const fetchNumber = useCallback(async () => {
-    //usecallbacl может не работать так как кеширует прошлые значения
-    // ЕБААААААТЬ ДА, кешируется и лексикал scope, поэтому функция даже без стейта и пропсов может
-    // давать разные результаты с useCallback и без него(точнее результат будет один(все уже сохранено
-    // из прошлого), а должен быть разным)
-    //
-    //триггерить эффекты также можно постараться хешем итогового объекта или коллекции
-
-    //все что используется во вне кешируемого коллбека и используется потом, может быть старым значением
-    // если не установлен массив зависимостей useCallback
+  
     try {
       let _n = await fetch(lentaRootUrl + lentaRelative);
       _n = await _n.text();
@@ -120,11 +112,7 @@ export function Lenta() {
     let subLength = _n * (defaultElWidth + 2 * elMargin);
 
     let _newMargin = (_cWidth - subLength) / (_n * 2) + elMargin;
-    console.log("elements on lenta =", _n);
-    console.log("newMargin =", _newMargin);
-
-    console.log("slider_width: ", slider_lentaRef.current.clientWidth);
-
+    
     slider_lentaRef.current.style.width = `${
       (_newMargin * 2 + defaultElWidth) * numberOfStories + 10
     }px`;
@@ -200,7 +188,7 @@ export function Lenta() {
 
   return (
     <section className="lenta">
-      <button onClick={computeStyles}>COMP STYLE</button>
+      {/* <button onClick={computeStyles}>COMP STYLE</button> */}
       <div className="container cnt-lenta-overflow" ref={contRef}>
         <div className="slider-left-div divleft">
           <button className="slider-btn-style sb1" onClick={handlerLeftClick}>
@@ -232,21 +220,6 @@ export function Lenta() {
     </section>
   );
 }
-
-// function addReactClassToListUNSCR(itemRef, classNameToAdd) {
-//   let _cl = itemRef.current.classList;
-//   let _length = _cl.length;
-//   let _classString = _cl.value;
-
-//   for (let val of _cl) {
-//     if (val === classNameToAdd) {
-//       return;
-//     }
-//   }
-//   _cl[_length] = classNameToAdd;
-//   _cl.length = _length + 1;
-//   _cl.value = _classString + " " + classNameToAdd;
-// }
 
 function addReactClassToListSCR(itemRef, classNameToAdd) {
   let _classString = itemRef.current.classList.value;

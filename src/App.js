@@ -8,13 +8,6 @@ import { Help } from "./components/Help";
 import { NotFound } from "./components/NotFound";
 import { TestFetch } from "./components/testcomps/_fetch";
 
-// function App() {
-//   console.log("App");
-//   return (
-//     <TestFetch/>
-//   );
-// }
-
 
 function App() {
   console.log("App");

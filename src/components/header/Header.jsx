@@ -37,13 +37,13 @@ export function Header() {
                   </Link>
                 </li>
                 <li className="li-elem">
-                  <Link to="/menu" className="header__link hthvel">
-                    Купоны
+                  <Link to="/about" className="header__link hthvel">
+                    Купоны(about)
                   </Link>
                 </li>
                 <li className="li-elem">
                   <Link to="/menu" className="header__link hthvel">
-                    Акции
+                    Акции(menu)
                   </Link>
                 </li>
               </ul>

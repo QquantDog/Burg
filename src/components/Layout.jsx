@@ -1,6 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import { Header } from "./header/Header";
 import { Lenta } from "./header/Lenta";
+import { Footer } from "./footer/Footer";
 
 export function Layout() {
   console.log("Layout");
@@ -9,14 +10,10 @@ export function Layout() {
       <div id='portalSliderElement'></div>
       <Header />
       <Lenta />
+
+      <Outlet />
+
+      <Footer />
     </>
   );
 }
-
-// <header>
-//         <Link to="/">Home</Link>
-//         <Link to="/about">About</Link>
-//         <Link to="/help">Help</Link>
-//       </header>
-//       <Outlet />
-//       <footer>all rights 2023 res.</footer>

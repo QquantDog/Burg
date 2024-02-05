@@ -1,0 +1,21 @@
+.btn-group-add{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 25px;
+
+}
+
+.btn-group-elem-size{
+    display: block;
+    width: 25px;
+    height: 25px;
+
+}
+
+.d-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}

@@ -1,0 +1,65 @@
+.main-grid-wrapper{
+    width: 90vw;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item-wrapper{
+    padding: 20px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* .img-wrapper{
+    width: 160px;
+} */
+
+
+.main-grid-img{
+    display: block;
+    width: 296px;
+}
+
+.main-item-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.item_name, .item_descr{
+    width: 320px;
+}
+
+.item_name{
+    padding: 10px 0px;
+    font-size: 20px;
+    color: brown(80,35,20);
+
+}
+.item_descr{
+    height: 102px;
+    overflow: auto;
+    font-size: 14px;
+    color: rgb(132, 95, 80);
+}
+
+.add-to-basket-btn{
+    display: block;
+    padding: 10px 25px;
+    border-radius: 15px;
+    background-color: rgb(219, 112, 12);
+    color: rgba(240,240,240,0.9);
+
+}
+
+.btn-block{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
