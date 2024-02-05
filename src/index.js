@@ -3,7 +3,6 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 
 import "./styles/main.css";
-// потом все подключится в main.css и будет один импорт стилей
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
 

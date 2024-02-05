@@ -10,9 +10,7 @@ export function Layout() {
       <div id='portalSliderElement'></div>
       <Header />
       <Lenta />
-
       <Outlet />
-
       <Footer />
     </>
   );

@@ -87,9 +87,7 @@ export function Lenta() {
     computeStyles();
   }, [numberOfStories]);
 
-  // useEffect(()=>{
-  //   computeStyles();
-  // })
+
   function getMaxNumberOfSwipes() {
     return (
       //uses default elem width - если поедут ширины, поедет все
